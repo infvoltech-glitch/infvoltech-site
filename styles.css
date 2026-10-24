@@ -5,3 +5,31 @@
 
 /* Atualização visual com as artes enviadas */
 .hero-logo-wrap{width:min(100%,520px);position:relative;border:1px solid #0a8fff55;border-radius:14px;overflow:hidden;box-shadow:0 0 60px #007bff24;background:#030812}.hero-logo{display:block;width:100%;height:auto;object-fit:contain}.hero-art:before{width:90%;height:80%;background:#007bff20}.promo-gallery{background:linear-gradient(180deg,#061022,#050b16)}.promo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.promo-card{border:1px solid #153b60;border-radius:12px;overflow:hidden;background:#071326;transition:transform .25s,border-color .25s}.promo-card:hover{transform:translateY(-5px);border-color:#08aaff}.promo-card>img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}.promo-caption{padding:20px}.promo-caption>span{font-size:9px;letter-spacing:1.7px;color:var(--cyan);font-weight:800}.promo-caption h3{font-size:19px;line-height:1.3;margin:9px 0}.promo-caption p{font-size:12px;color:var(--muted);min-height:58px}.promo-caption a{display:inline-block;color:var(--cyan);font-size:12px;font-weight:700;margin-top:5px}.pentest-note{font-size:11px;color:#91a7c0;margin:22px 0 0;border-left:2px solid var(--cyan);padding:8px 13px;background:#071326}.pentest-note strong{color:#e6f5ff}@media(max-width:800px){.promo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-logo-wrap{max-width:500px;margin:auto}}@media(max-width:540px){.promo-grid{grid-template-columns:1fr}.promo-caption p{min-height:0}.hero-logo-wrap{width:100%}}
+
+
+/* Refinamento profissional: ícones vetoriais e globo 3D animado */
+.service-icon{width:48px;height:48px;display:grid;place-items:center;margin-bottom:18px;border:1px solid #087fc755;border-radius:13px;background:linear-gradient(145deg,#0c3154,#07172a);box-shadow:inset 0 0 22px #078bff13,0 8px 24px #0003}
+.service-icon svg{width:25px;height:25px;fill:none;stroke:#28c9ff;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 5px #078bff88)}
+.service-card{transition:transform .25s ease,border-color .25s ease,background .25s ease}
+.service-card:hover{transform:translateY(-5px);background:linear-gradient(145deg,#0b2038,#071326)}
+.globe-scene{position:relative;width:min(100%,560px);height:420px;display:grid;place-items:center;isolation:isolate}
+.globe-halo{position:absolute;width:76%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#087bff36 0%,#087bff12 48%,transparent 72%);filter:blur(18px);animation:haloPulse 5s ease-in-out infinite}
+.globe{position:relative;width:290px;height:290px;display:grid;place-items:center;filter:drop-shadow(0 0 34px #087bff38)}
+.globe-sphere{width:100%;height:100%;border-radius:50%;overflow:hidden;box-shadow:inset -24px -8px 45px #010813aa,inset 12px 8px 30px #21bfff20,0 0 0 1px #23bfff55;animation:globeFloat 6s ease-in-out infinite}
+.globe-sphere svg{width:100%;height:100%;display:block;animation:globeRotate 24s linear infinite;transform-origin:50% 50%}
+.globe-network{animation:networkPulse 3.5s ease-in-out infinite}
+.globe-scan{position:absolute;inset:0;border-radius:50%;background:linear-gradient(115deg,transparent 35%,#53dcff1b 48%,#53dcff55 50%,#53dcff12 52%,transparent 66%);mix-blend-mode:screen;animation:scan 5s linear infinite;pointer-events:none}
+.globe-orbit{position:absolute;width:440px;height:190px;border:1px solid #078fff55;border-radius:50%;pointer-events:none}
+.orbit-a{transform:rotate(-25deg);animation:orbitSpin 18s linear infinite}
+.orbit-b{width:360px;height:410px;transform:rotate(48deg);border-color:#13cfff35;animation:orbitSpin 24s linear infinite reverse}
+.hero-art .card-a{right:0;top:62px}.hero-art .card-b{left:0;bottom:62px}
+.hero-art:before{width:95%;height:85%;background:radial-gradient(ellipse,#087bff20,transparent 70%)}
+@keyframes globeRotate{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@keyframes orbitSpin{from{rotate:0deg}to{rotate:360deg}}
+@keyframes globeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes haloPulse{0%,100%{opacity:.55;transform:scale(.92)}50%{opacity:1;transform:scale(1.08)}}
+@keyframes networkPulse{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes scan{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@media(max-width:980px){.globe-scene{height:360px}.globe{width:250px;height:250px}.globe-orbit{width:380px;height:165px}.orbit-b{width:320px;height:350px}}
+@media(max-width:700px){.globe-scene{height:290px;margin-top:8px}.globe{width:205px;height:205px}.globe-orbit{width:310px;height:130px}.orbit-b{width:260px;height:290px}.hero-art .card-a{right:-2px;top:24px}.hero-art .card-b{left:-2px;bottom:28px}}
+@media(prefers-reduced-motion:reduce){.globe-sphere,.globe-sphere svg,.globe-scan,.globe-orbit,.globe-halo,.globe-network{animation:none!important}.service-card{transition:none}}
