@@ -47,3 +47,24 @@
 .promo-caption{flex:1;display:flex;flex-direction:column;align-items:flex-start}
 .promo-caption a{margin-top:auto;padding-top:14px}
 @media(max-width:800px){.globe-brand-mark{width:45%;height:45%}}
+
+/* Carrossel de serviços em destaque */
+.promo-carousel{display:grid;grid-template-columns:38px minmax(0,1fr) 38px;align-items:center;gap:12px}
+.promo-carousel .promo-grid{min-width:0;grid-template-columns:repeat(3,minmax(0,1fr));}
+.promo-card[hidden]{display:none!important}
+.promo-visual{height:155px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(circle at 50% 40%,#07599a 0%,#071a31 45%,#030914 100%);border-bottom:1px solid #153b60}
+.promo-visual:before,.promo-visual:after{content:'';position:absolute;border:1px solid #08bfff45;border-radius:50%;width:150px;height:150px;box-shadow:0 0 0 18px #08bfff0a,0 0 0 36px #08bfff08}
+.promo-visual:after{width:95px;height:95px;border-style:dashed;animation:orbitSpin 24s linear infinite}
+.promo-visual-icon{position:relative;z-index:1;color:var(--cyan);font-size:54px;font-weight:700;text-shadow:0 0 28px #08bfff85}
+.promo-visual-label{position:absolute;right:13px;bottom:12px;color:#8fb4d2;font-size:8px;letter-spacing:1.7px;font-weight:800}
+.carousel-control{width:36px;height:42px;border:1px solid #16466d;border-radius:8px;background:#071326;color:var(--cyan);font-size:28px;line-height:1;cursor:pointer;transition:background .2s,border-color .2s}
+.carousel-control:hover{background:#0b2a47;border-color:var(--cyan)}
+.carousel-status{display:flex;justify-content:space-between;align-items:center;gap:15px;margin:17px 50px 0}
+.carousel-dots{display:flex;gap:6px;flex-wrap:wrap}
+.carousel-dot{width:7px;height:7px;border:0;border-radius:50%;padding:0;background:#31516e;cursor:pointer}
+.carousel-dot.is-active{width:22px;border-radius:6px;background:var(--cyan)}
+.carousel-hint{font-size:10px;color:var(--muted)}
+.promo-caption p{min-height:72px}
+@media(max-width:980px){.promo-carousel .promo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.promo-carousel{grid-template-columns:30px minmax(0,1fr) 30px;gap:8px}.carousel-control{width:30px}.carousel-status{margin-left:38px;margin-right:38px}}
+@media(max-width:700px){.promo-carousel .promo-grid{grid-template-columns:1fr}.promo-visual{height:125px}.promo-caption p{min-height:0}.carousel-status{margin-left:38px;margin-right:38px;align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.promo-visual:after{animation:none}}
