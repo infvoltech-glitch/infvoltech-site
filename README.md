@@ -1,16 +1,15 @@
 # INFVOLTECH — site institucional
 
-Site institucional responsivo em HTML, CSS e JavaScript, sem build ou dependências de instalação.
+Site responsivo em HTML, CSS e JavaScript, com identidade visual escura/azul e as artes fornecidas. Inclui Informática, Eletrônica, manutenção de notebooks, montagem de PCs, redes/suporte, equipamentos e Pentest autorizado.
 
 ## Visualizar localmente
-1. Extraia o arquivo ZIP.
-2. Abra `index.html` no navegador.
+Extraia o ZIP e abra `index.html` no navegador.
 
-## Antes de publicar
-- Confirme se o WhatsApp está correto em todos os links `wa.me` (formato internacional, sem `+` nem espaços).
-- Confira o Instagram em `https://instagram.com/infvoltech`.
-- Troque textos e identidade visual conforme necessário.
-- Se tiver fotos reais dos serviços, podemos incluí-las na seção de diferenciais/galeria.
+## Publicar no GitHub/Vercel
+Envie todo o conteúdo da pasta `infvoltech-site` para a raiz do repositório GitHub. Na Vercel, use detecção automática ou framework Other. Não é necessário build; se solicitado, deixe Build Command vazio e Output Directory como `.`.
 
-## Publicar
-Envie todos os arquivos e pastas deste projeto para a raiz de um repositório GitHub. Na Vercel, importe esse repositório e selecione o framework **Other** (ou deixe a detecção automática). Como é um site estático, não é necessário comando de build; deixe o campo Build Command vazio e Output Directory como `.` se a interface pedir.
+## Contatos configurados
+- WhatsApp: +55 49 99114-8438
+- Instagram: https://instagram.com/infvoltech
+
+O pentest é descrito como serviço autorizado, apenas com permissão do proprietário do sistema/rede.
