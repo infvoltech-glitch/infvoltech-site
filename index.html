@@ -9,18 +9,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Identidade visual refinada da marca INFVOLTECH */
+    .brand { display:inline-flex; align-items:center; gap:12px; text-decoration:none; min-width:0; }
+    .brand .brand-mark { display:grid; place-items:center; width:48px; height:48px; flex:0 0 48px; box-sizing:border-box; border:1px solid #00cfff; border-radius:12px; background:linear-gradient(135deg,#07334b,#071426); color:#00cfff; font-size:21px; font-weight:800; letter-spacing:-1px; box-shadow:0 0 20px rgba(0,207,255,.10); }
+    .brand .brand-content { display:flex; flex-direction:column; gap:5px; min-width:0; }
+    .brand .brand-content strong { color:#fff; font-size:25px; font-weight:800; line-height:1; letter-spacing:-.8px; white-space:nowrap; }
+    .brand .brand-content strong span { color:#00cfff; }
+    .brand .brand-content small { color:#a7c1d4; font-size:9px; font-weight:700; letter-spacing:1px; line-height:1.5; white-space:nowrap; }
+    .brand .brand-content small i { color:#00cfff; font-style:normal; padding:0 2px; }
+    @media (max-width:520px) {
+      .brand { gap:8px; }
+      .brand .brand-mark { width:40px; height:40px; flex-basis:40px; font-size:18px; }
+      .brand .brand-content strong { font-size:21px; }
+      .brand .brand-content small { font-size:7px; letter-spacing:.35px; white-space:normal; }
+    }
+  </style>
+
 </head>
 <body>
   <header class="header"><div class="container nav-wrap">
-    <a class="brand" href="#inicio" aria-label="INFVOLTECH início"><span class="brand-mark">IV</span><span><strong>INFVOL<span>TECH</span></strong><small>INFORMÁTICA • ELETRÔNICA • CIBERSEGURANÇA</small></span></a>
+    <a class="brand" href="#inicio" aria-label="INFVOLTECH — início">
+      <span class="brand-mark" aria-hidden="true">IV</span>
+      <span class="brand-content">
+        <strong>INFVOL<span>TECH</span></strong>
+        <small>INFORMÁTICA <i>•</i> ELETRÔNICA <i>•</i> PENTEST AUTORIZADO</small>
+      </span>
+    </a>
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
     <nav class="nav" aria-label="Navegação principal"><a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#galeria">Diferenciais</a><a href="#destaques">Áreas de atuação</a><a href="#contato">Contato</a></nav>
     <a class="button button-small nav-cta" href="https://wa.me/554991148438?text=Ol%C3%A1%2C%20INFVOLTECH!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">◉ Fale conosco</a>
   </div></header>
   <main>
     <section class="hero" id="inicio"><div class="hero-grid"></div><div class="container hero-content">
-      <a class="brand" href="#inicio" aria-label="INFVOLTECH — início"><span class="brand-mark">IV</span><span class="brand-content"><strong>INFVOL<span>TECH</span></strong><small>TECNOLOGIA <i>•</i> ELETRÔNICA <i>•</i> SEGURANÇA DIGITAL</small></span></a>
-      <div class="hero-points"><span><b>⌁</b> Atendimento especializado</span><span><b>ϟ</b> Soluções sob medida</span><span><b>◇</b> Cuidado em cada serviço</span></div>
+      <div class="hero-copy"><p class="eyebrow"><span class="pulse"></span> SUA TECNOLOGIA EM BOAS MÃOS</p><h1>INFVOL<span>TECH</span></h1><h2>Informática, Eletrônica e <span>Cibersegurança</span></h2><p class="hero-lead">Tecnologia que funciona. Segurança digital para proteger seus sistemas, sua equipe e sua empresa.</p><p class="hero-sub">Pentest autorizado, análise de vulnerabilidades, simulações educativas de phishing, treinamento de segurança, manutenção de computadores e notebooks, montagem gamer e criação de sites.</p>
+      <div class="hero-points"><span><b>⌁</b> Atendimento especializado</span><span><b>ϟ</b> Soluções sob medida</span><span><b>◇</b> Cuidado em cada serviço</span><span><b>⌑</b> Testes de segurança autorizados</span></div>
       <a class="button" href="https://wa.me/554991148438?text=Ol%C3%A1%2C%20INFVOLTECH!%20Quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">◉ Solicite um orçamento <span>↗</span></a>
       </div><div class="hero-art" aria-label="Ilustração tecnológica de computador"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="globe-scene" role="img" aria-label="Globo tecnológico animado representando conectividade e segurança digital">
         <div class="globe-halo"></div>
@@ -71,7 +95,7 @@
     <section class="section difference" id="galeria"><div class="container"><div class="section-heading"><div><p class="eyebrow">NOSSO JEITO DE TRABALHAR</p><h2>Seu próximo passo em <span>tecnologia.</span></h2></div><p>Atendimento claro, avaliação cuidadosa e soluções pensadas para você.</p></div><div class="feature-grid"><article class="feature feature-large"><div class="feature-symbol">⌁</div><div><span class="feature-kicker">01 / DIAGNÓSTICO</span><h3>Entender antes de agir.</h3><p>Começamos ouvindo o que você precisa para orientar o atendimento com transparência.</p></div><div class="feature-lines"></div></article><article class="feature"><div class="feature-symbol">ϟ</div><span class="feature-kicker">02 / AGILIDADE</span><h3>Menos complicação.</h3><p>Orientação objetiva para você decidir com segurança os próximos passos.</p></article><article class="feature"><div class="feature-symbol">◇</div><span class="feature-kicker">03 / PERSONALIZAÇÃO</span><h3>Feito para sua realidade.</h3><p>Recomendações de acordo com o uso, a necessidade e o orçamento.</p></article></div></div></section>
     <section class="contact-strip" id="contato"><div class="container contact-layout"><div><p class="eyebrow">VAMOS RESOLVER ISSO?</p><h2>Precisa de ajuda com tecnologia?</h2><p>Conte o que você precisa. Vamos conversar sobre a melhor solução.</p></div><div class="contact-actions"><a class="contact-item" href="https://wa.me/554991148438?text=Ol%C3%A1%2C%20INFVOLTECH!%20Gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"><span class="contact-icon whatsapp">◉</span><span><small>WHATSAPP</small><strong>(49) 99114-8438</strong></span><b>↗</b></a><a class="contact-item" href="https://instagram.com/infvoltech" target="_blank" rel="noopener"><span class="contact-icon instagram">◎</span><span><small>INSTAGRAM</small><strong>@infvoltech</strong></span><b>↗</b></a></div></div></section>
   </main>
-  <footer class="footer"><div class="container footer-main"><a class="brand" href="#inicio"><span class="brand-mark">IV</span><span><strong>INFVOL<span>TECH</span></strong><small>INFORMÁTICA • ELETRÔNICA • PENTEST</small></span></a><p>Informática, eletrônica, pentest autorizado e suporte<br>para conectar você ao que importa.</p><div class="footer-links"><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> INFVOLTECH. Todos os direitos reservados.</span><span>Feito com tecnologia e cuidado <b>✦</b></span></div></footer>
+  <footer class="footer"><div class="container footer-main"><a class="brand" href="#inicio"><span class="brand-mark">IV</span><span><strong>INFVOL<span>TECH</span></strong><small>INFORMÁTICA • ELETRÔNICA • PENTEST AUTORIZADO</small></span></a><p>Informática, eletrônica, cibersegurança e desenvolvimento web.<br>Pentest e simulações realizados somente com autorização.</p><div class="footer-links"><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> INFVOLTECH. Todos os direitos reservados.</span><span>Feito com tecnologia e cuidado <b>✦</b></span></div></footer>
   <a class="whatsapp-float" href="https://wa.me/554991148438?text=Ol%C3%A1%2C%20INFVOLTECH!" target="_blank" rel="noopener" aria-label="Fale com a INFVOLTECH pelo WhatsApp">◉</a>
   <script src="script.js" defer></script>
 </body></html>
