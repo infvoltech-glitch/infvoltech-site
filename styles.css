@@ -142,3 +142,9 @@
 .promo-visual .photo-badge { display: none !important; content: none !important; }
 .promo-visual.promo-photo { position: relative; overflow: hidden; }
 .promo-visual.promo-photo img { position: relative; z-index: 1; display: block; width: 100%; height: 100%; object-fit: cover; }
+
+
+/* Correção definitiva das fotos dos cartões: imagens locais incorporadas, sem texto sobreposto */
+.promo-visual.promo-photo{height:155px;min-height:155px;max-height:155px;position:relative;overflow:hidden;padding:0;background:#061326;border-bottom:1px solid #153b60}
+.promo-visual.promo-photo:before,.promo-visual.promo-photo:after,.promo-visual.promo-photo .promo-visual-label{display:none!important;content:none!important}
+.promo-visual.promo-photo img{display:block!important;width:100%!important;height:100%!important;max-width:none;object-fit:cover!important;object-position:center!important}
