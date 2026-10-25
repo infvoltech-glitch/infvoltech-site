@@ -121,3 +121,14 @@
     animation-duration: 60s !important;
   }
 }
+
+
+/* Globo refinado: órbitas limpas e marca integrada sem fundo quadrado */
+.globe-brand-center{position:absolute;z-index:5;left:50%;top:50%;transform:translate(-50%,-50%);width:66%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;text-align:center;pointer-events:none;filter:drop-shadow(0 0 14px #078bff44)}
+.globe-brand-center img{display:block;width:44%;height:auto;max-height:90px;object-fit:contain}
+.globe-brand-center strong{font-size:clamp(12px,1.7vw,17px);font-weight:800;letter-spacing:.7px;line-height:1;color:#eef8ff;white-space:nowrap}
+.globe-brand-center strong span{color:#11cfff}
+.globe-brand-center small{font-size:clamp(5px,.7vw,7px);letter-spacing:1.2px;color:#a9c8e5;white-space:nowrap}
+.globe-scene .globe-orbit.orbit-a{width:420px;height:172px;border-color:#12aaff66}
+.globe-scene .globe-orbit.orbit-b{width:350px;height:355px;border-color:#18d5ff3d}
+@media(max-width:700px){.globe-brand-center{width:70%;gap:4px}.globe-brand-center img{width:42%;max-height:60px}.globe-brand-center strong{font-size:12px}.globe-brand-center small{font-size:5px;letter-spacing:.7px}.globe-scene .globe-orbit.orbit-a{width:300px;height:126px}.globe-scene .globe-orbit.orbit-b{width:250px;height:280px}}
