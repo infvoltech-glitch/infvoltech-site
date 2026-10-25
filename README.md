@@ -1,23 +1,11 @@
-# INFVOLTECH — site institucional
+# INFVOLTECH — novo site
 
-Site responsivo em HTML, CSS e JavaScript, com identidade visual escura/azul e as artes fornecidas. Inclui Informática, Eletrônica, manutenção de notebooks, montagem de PCs, redes/suporte, equipamentos e Pentest autorizado.
+Site institucional responsivo com visual tecnológico escuro, detalhes em azul/ciano, serviços com imagens diferentes, menu mobile, links de WhatsApp/Instagram e globo animado em CSS.
 
-## Visualizar localmente
-Extraia o ZIP e abra `index.html` no navegador.
+## Publicar no GitHub + Vercel
+1. Extraia o ZIP.
+2. Envie `index.html`, `styles.css`, `script.js`, `README.md` e a pasta `assets` para a raiz do repositório GitHub.
+3. Faça commit das alterações.
+4. A Vercel deve iniciar uma nova implantação automaticamente.
 
-## Publicar no GitHub/Vercel
-Envie todo o conteúdo da pasta `infvoltech-site` para a raiz do repositório GitHub. Na Vercel, use detecção automática ou framework Other. Não é necessário build; se solicitado, deixe Build Command vazio e Output Directory como `.`.
-
-## Contatos configurados
-- WhatsApp: +55 49 99114-8438
-- Instagram: https://instagram.com/infvoltech
-
-O pentest é descrito como serviço autorizado, apenas com permissão do proprietário do sistema/rede.
-
-
-## Publicação da versão atualizada
-Extraia o ZIP mantendo a pasta `infvoltech-site` e publique o conteúdo completo. As imagens principais da galeria estão incorporadas diretamente no HTML para evitar falhas quando o servidor não encontra a pasta `assets`. O símbolo oficial também está disponível em `assets/infvoltech-mark.png` e aparece no centro do globo animado e no painel da seção Sobre.
-
-
-## Imagens e marca
-O cabeçalho, o rodapé e o elemento de marca central usam `assets/logo-oficial.png`, fornecido pelo cliente. As áreas de eletrônica, suporte empresarial, informática e orçamento usam imagens relacionadas aos respectivos serviços. Mantenha a pasta `assets` ao publicar no GitHub/Vercel.
+Não renomeie a pasta `assets`, pois os caminhos das imagens apontam para ela.
