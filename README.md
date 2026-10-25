@@ -17,3 +17,7 @@ O pentest é descrito como serviço autorizado, apenas com permissão do proprie
 
 ## Publicação da versão atualizada
 Extraia o ZIP mantendo a pasta `infvoltech-site` e publique o conteúdo completo. As imagens principais da galeria estão incorporadas diretamente no HTML para evitar falhas quando o servidor não encontra a pasta `assets`. O símbolo oficial também está disponível em `assets/infvoltech-mark.png` e aparece no centro do globo animado e no painel da seção Sobre.
+
+
+## Imagens e marca
+O cabeçalho, o rodapé e o elemento de marca central usam `assets/logo-oficial.png`, fornecido pelo cliente. As áreas de eletrônica, suporte empresarial, informática e orçamento usam imagens relacionadas aos respectivos serviços. Mantenha a pasta `assets` ao publicar no GitHub/Vercel.

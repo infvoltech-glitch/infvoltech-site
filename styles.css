@@ -68,3 +68,12 @@
 @media(max-width:980px){.promo-carousel .promo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.promo-carousel{grid-template-columns:30px minmax(0,1fr) 30px;gap:8px}.carousel-control{width:30px}.carousel-status{margin-left:38px;margin-right:38px}}
 @media(max-width:700px){.promo-carousel .promo-grid{grid-template-columns:1fr}.promo-visual{height:125px}.promo-caption p{min-height:0}.carousel-status{margin-left:38px;margin-right:38px;align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){.promo-visual:after{animation:none}}
+
+/* Atualização de marca e imagens correspondentes aos serviços */
+.brand .brand-mark.brand-logo{display:block;width:48px;height:48px;flex:0 0 48px;padding:0;object-fit:cover;border:1px solid #00cfff;border-radius:12px;letter-spacing:0;text-shadow:none;box-shadow:0 0 20px rgba(0,207,255,.10);background:#030812}
+.footer .brand .brand-mark.brand-logo{width:48px;height:48px;flex-basis:48px}
+.promo-visual.promo-photo{padding:0;background:#061326}
+.promo-visual.promo-photo:before,.promo-visual.promo-photo:after{display:none}
+.promo-visual.promo-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.promo-visual.promo-photo .promo-visual-label{padding:5px 8px;border-radius:4px;background:#030914d9;color:#bfeaff}
+@media(max-width:700px){.brand .brand-mark.brand-logo,.footer .brand .brand-mark.brand-logo{width:40px;height:40px;flex-basis:40px}}
