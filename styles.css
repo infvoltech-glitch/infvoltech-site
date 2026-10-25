@@ -132,3 +132,13 @@
 .globe-scene .globe-orbit.orbit-a{width:420px;height:172px;border-color:#12aaff66}
 .globe-scene .globe-orbit.orbit-b{width:350px;height:355px;border-color:#18d5ff3d}
 @media(max-width:700px){.globe-brand-center{width:70%;gap:4px}.globe-brand-center img{width:42%;max-height:60px}.globe-brand-center strong{font-size:12px}.globe-brand-center small{font-size:5px;letter-spacing:.7px}}
+
+
+/* Correção definitiva das imagens dos cartões: sem selos sobre as fotos. */
+.promo-visual.promo-photo:before,
+.promo-visual.promo-photo:after,
+.promo-visual .promo-visual-label,
+.promo-visual .image-badge,
+.promo-visual .photo-badge { display: none !important; content: none !important; }
+.promo-visual.promo-photo { position: relative; overflow: hidden; }
+.promo-visual.promo-photo img { position: relative; z-index: 1; display: block; width: 100%; height: 100%; object-fit: cover; }

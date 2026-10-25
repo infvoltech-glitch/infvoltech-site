@@ -37,3 +37,6 @@ As imagens são carregadas de URLs do Pexels, portanto a visualização delas re
 
 
 Imagens atualizadas: foram incluídas imagens recortadas da referência visual aprovada para redes e infraestrutura, cibersegurança/pentest e reparos eletrônicos. Os arquivos estão na pasta `assets/` e carregam localmente, sem depender de hospedagem externa para essas três imagens.
+
+
+Correção de imagens: as seis imagens dos cartões agora usam arquivos locais da pasta assets, sem dependência de links externos. Selos sobrepostos às fotos foram removidos/ocultados.
