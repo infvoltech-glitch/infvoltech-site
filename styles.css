@@ -84,3 +84,40 @@
 .globe-sphere{overflow:hidden}
 .promo-visual.promo-photo img{width:100%;height:100%;object-fit:cover;object-position:center}
 .brand-logo,.globe-brand-mark,.visual-core img{object-fit:contain}
+
+/* V6: animação explícita e contínua do globo */
+.globe-scene .globe-orbit.orbit-a {
+  animation: infvoltechOrbitA 14s linear infinite !important;
+  transform-origin: center center;
+  will-change: transform;
+}
+.globe-scene .globe-orbit.orbit-b {
+  animation: infvoltechOrbitB 19s linear infinite !important;
+  transform-origin: center center;
+  will-change: transform;
+}
+.globe-scene .globe-sphere svg {
+  animation: infvoltechGlobeSpin 24s linear infinite !important;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+  will-change: transform;
+}
+@keyframes infvoltechOrbitA {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes infvoltechOrbitB {
+  from { transform: translate(-50%, -50%) rotate(360deg); }
+  to { transform: translate(-50%, -50%) rotate(0deg); }
+}
+@keyframes infvoltechGlobeSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .globe-scene .globe-orbit.orbit-a,
+  .globe-scene .globe-orbit.orbit-b,
+  .globe-scene .globe-sphere svg {
+    animation-duration: 60s !important;
+  }
+}
